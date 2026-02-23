@@ -1,6 +1,7 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Job Tracker</title>
@@ -14,28 +15,41 @@
             font-family: "Geist", sans-serif;
         }
     </style>
- </head>
+</head>
 
- <body>
-    <div>
-        <h1 class="bg-amber-200">Job Application Tracker</h1>
-    </div>
-    <div>
-        <div>
-            <p>total</p>
-            <p>0</p>
+<body class="bg-gray-100">
+    <div class="max-w-6xl  mx-auto p-8">
+
+        <!-- title -->
+        <h1 class="text-5xl text-blue-500 font-bold mb-4">Job Application Tracker</h1>
+
+        <!-- Dashboard -->
+        <div class="grid grid-cols-3 gap-6 mb-6">
+            <div class="rounded-1g shadow bg-white p-5">
+                <p>total</p>
+                <p id="allCount" class="text-2xl text-blue-500 font-bold">0</p>
+            </div>
+
+            <div class="bg-white rounded-lg shadow p-5">
+                <p>Interview</p>
+                <p id="interviewCount" class="text-2xl text-green-400">0</p>
+            </div>
+
+            <div class="rounded-lg shadow bg-white p-5">
+                <p>Rejected</p>
+                <p id="rejectedCount">0</p>
+            </div>
         </div>
-        <div>
-            <p>Interview</p>
-            <p>0</p>
-        </div>
-        <div>
-            <p>Rejected</p>
-            <p>0</p>
-        </div>
-    </div>
-    
-    <script src="script.js"></script>
-    
- </body>
- </html>
+
+
+
+
+
+
+        
+
+        <script src="script.js"></script>
+
+</body>
+
+</html>
