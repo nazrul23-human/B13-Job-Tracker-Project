@@ -21,7 +21,7 @@
     <div class="max-w-6xl  mx-auto p-8">
 
         <!-- title -->
-        <h1 class="text-5xl text-blue-700 font-bold mb-4">Job Application Tracker</h1>
+        <h1 class="text-5xl text-blue-800 font-bold mb-4">Job Application Tracker</h1>
 
         <!-- Dashboard -->
         <div class="grid grid-cols-3 gap-6 mb-6">
@@ -40,6 +40,19 @@
                 <p id="rejectedCount" class="text-red-500 text-2xl font-bold">0</p>
             </div>
         </div>
+        <!-- Available -->
+         <div class="flex justify-between">
+            <h2 class="text-lg font-bold">Available Jobs</h2>
+                <p id="totalCount">0 Jobs</p>
+         </div>
+         <!-- Tabs -->
+          <div class="flte gap-3 mb-6">
+            <button onclick="switchTab('all')" class="bg-blue-500 text-white px-5 py-2 rounded">All</button>
+
+            <button onclick="switchTab('Interview')" class="bg-gray-300 px-5 py-2 rounded">Interview</button>
+
+            <button onclick="switchTab('Rejected')" class= "bg-gray-300 px-5 py-2 rounded">Rejected</button>
+          </div>
 
 
 
