@@ -26,7 +26,7 @@
         <!-- Dashboard -->
         <div class="grid grid-cols-3 gap-6 mb-6">
             <div class="rounded-1g shadow bg-white p-5">
-                <p>total</p>
+                <p>Total</p>
                 <p id="allCount" class="text-2xl text-blue-500 font-bold">0</p>
             </div>
 
@@ -42,8 +42,8 @@
         </div>
         <!-- Available -->
          <div class="flex justify-between">
-            <h2 class="text-lg font-bold">Available Jobs</h2>
-                <p id="totalCount">0 Jobs</p>
+            <h2 class="text-lg font-semibold mb-4">Available Jobs</h2>
+                <p id="totalCount font-semibold">0 Jobs</p>
          </div>
          <!-- Tabs -->
           <div class="flte gap-3 mb-6">
@@ -53,6 +53,18 @@
 
             <button onclick="switchTab('Rejected')" class= "bg-gray-300 px-5 py-2 rounded">Rejected</button>
           </div>
+
+          <!-- Cards -->
+           <div id="cards" class="space-y-5"></div>
+            
+           <!-- Empty -->
+            <div id="empty" class="flex flex-col bg-white items-center">
+                <img src="./jobs.png" width="60">
+                <h1 class="text-xl font-bold mb-2">No jobs available</h1>
+                <p class="text-gray-700">Check back soon for new job opportunities</p>
+            </div>
+        </div>
+    </div>
 
 
 
