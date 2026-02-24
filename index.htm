@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    
     <style>
         * {
             font-family: "Geist", sans-serif;
@@ -22,24 +23,24 @@
   <div class="max-w-5xl mx-auto p-6">
 
     <!-- TITLE -->
-    <h1 class="text-3xl font-bold text-blue-900 mb-6">Job Application Tracker</h1>
+    <h1 class="text-3xl font-bold text-blue-800 mb-6">Job Application Tracker</h1>
 
     <!-- DASHBOARD -->
     <div class="grid grid-cols-3 gap-4 mb-8">
 
       <div class="bg-white p-5 rounded-lg shadow">
         <p>Total</p>
-        <p id="allCount" class="text-2xl font-bold text-blue-900">0</p>
+        <p id="allCount" class="text-2xl font-bold text-blue-800">0</p>
       </div>
 
       <div class="bg-white p-5 rounded-lg shadow">
         <p>Interview</p>
-        <p id="interviewCount" class="text-2xl font-bold text-green-600">0</p>
+        <p id="interviewCount" class="text-2xl font-bold text-green-500">0</p>
       </div>
 
       <div class="bg-white p-5 rounded-lg shadow">
         <p>Rejected</p>
-        <p id="rejectedCount" class="text-2xl font-bold text-red-600">0</p>
+        <p id="rejectedCount" class="text-2xl font-bold text-red-500">0</p>
       </div>
 
     </div>
@@ -55,11 +56,11 @@
 
       <!-- Tabs -->
       <div class="flex gap-3 mb-6">
-        <button onclick="switchTab('all')" class="px-4 py-2 bg-blue-500 text-white rounded">All</button>
+        <button onclick="switchTab('all')" class="px-4 py-2 bg-blue-400 text-white rounded">All</button>
 
-        <button onclick="switchTab('interview')" class="px-4 py-2 bg-gray-200 rounded">Interview</button>
+        <button onclick="switchTab('interview')" class="px-4 py-2 bg-gray-300 rounded">Interview</button>
 
-        <button onclick="switchTab('rejected')" class="px-4 py-2 bg-gray-200 rounded">Rejected</button>
+        <button onclick="switchTab('rejected')" class="px-4 py-2 bg-gray-300 rounded">Rejected</button>
       </div>
 
       <!-- Cards -->
@@ -68,7 +69,7 @@
       <!-- Empty -->
 
       <div id="empty" class="bg-white flex flex-col items-center">
-        <img src="./jobs.png" width="70">
+        <img src="./jobs.png" width="80">
         <h1 class="text-xl font-semibold mb-2">No jobs available</h1>
         <p class="text-gray-500">Check back soon for new job opportunities</p>
       </div>

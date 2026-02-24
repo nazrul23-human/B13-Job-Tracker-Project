@@ -1,68 +1,114 @@
+
 const jobs = [
     {
         id: 1,
-        company: "Mobile First Corp",
-        role: "React Native Developer",
-        info: "Remote • Full-time • $130k - $175k",
-        description: "Build cross-platform mobile apps.",
+        companyName: "Mobile First Corp",
+        type: "React Native Developer",
+        position:"Senior Engineer",
+        location:"Dhaka",
+        salary:"Remote • Full-time • $130,000 - $175,000",
+        description: "Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.",
         status: "all"
     },
-    {
-        id: 2,
-        company: "WebFlow Agency",
-        role: "Web Designer & Developer",
-        info: "Los Angeles • Part-time • $80k - $120k",
-        description: "Design and build websites.",
+     {
+    id: 2,
+        companyName: "WebFlow Agency",
+        type: "Web Designer & Developer",
+        position:"Senior Engineer",
+        location:"Dhaka",
+        salary:"Los Angeles AC • Part-time • $80,000 - $120,000",
+        description:"Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.",
         status: "all"
     },
-    {
-        id: 3,
-        company: "Mobile First Corp",
-        role: "React Native Developer",
-        info: "Remote • Full-time • $130k - $175k",
-        description: "Build cross-platform mobile apps.",
+     {
+    id: 3,
+        companyName: "DataViz Solutions",
+        type: "Data Visualization Specialist",
+        position:"Senior Engineer",
+        location:"Dhaka",
+        salary:"Boston, MA • Full-time •$125,000 - $165,000",
+        description: "Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.",
         status: "all"
+    
     },
     {
-        id: 4,
-        company: "WebFlow Agency",
-        role: "Web Designer & Developer",
-        info: "Los Angeles • Part-time • $80k - $120k",
-        description: "Design and build websites.",
+    id: 4,
+        companyName: "CloudFirst Inc",
+        type: "Backend Developer",
+        position:"Senior Engineer",
+        location:"Dhaka",
+        salary:"Seattle, WA • Full-time • $140,000 - $190,000",
+        description: "Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.",
         status: "all"
-    },
-    {
-        id: 5,
-        company: "Mobile First Corp",
-        role: "React Native Developer",
-        info: "Remote • Full-time • $130k - $175k",
-        description: "Build cross-platform mobile apps.",
+    
+     },
+     {
+    id: 5,
+        companyName: "Innovation Labs",
+        type: "UI/UX Engineer",
+        position:"Senior Engineer",
+        location:"Dhaka",
+        salary:"Austin, TX • Full-time • $110,000 - $150,000",
+        description: "Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.",
         status: "all"
-    },
-    {
-        id: 6,
-        company: "WebFlow Agency",
-        role: "Web Designer & Developer",
-        info: "Los Angeles • Part-time • $80k - $120k",
-        description: "Design and build websites.",
+    
+     },
+     {
+    id: 6,
+        companyName: "MegaCorp Solutions",
+        type: "JavaScript Developer",
+        position:"Senior Engineer",
+        location:"Dhaka",
+        salary:"New York, NY • Full-time • $130,000 - $170,00",
+        description: "Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.",
         status: "all"
-    },
-    {
-        id: 7,
-        company: "Mobile First Corp",
-        role: "React Native Developer",
-        info: "Remote • Full-time • $130k - $175k",
-        description: "Build cross-platform mobile apps.",
+    
+     },
+     {
+    id: 7,
+        companyName: "StartupXYZ",
+        type: "Full Stack Engineer",
+        position:"Senior Engineer",
+        location:"Dhaka",
+        salary:"Remote • Full-time • $120,000 - $160,000",
+        description: "Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.",
         status: "all"
-    },
+    
+     },
+     {
+    id: 8,
+        companyName: "TechCorp Industries",
+        type: "Senior Frontend Developer",
+        position:"Senior Engineer",
+        location:"Dhaka",
+        salary:"San Francisco, CA • Full-time • $130,000 - $175,000",
+        description: "We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.",
+        status: "all"
+    
+     },
+     {
+    id: 9,
+        companyName: "CloudFirst Inc",
+        type: "Backend Developer",
+        position:"Senior Engineer",
+        location:"Dhaka",
+        salary:"Seattle, WA • Full-time • $140,000 - $190,000",
+        description: "Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.",
+        status: "all"
+    
+     },
     {
-        id: 8,
-        company: "WebFlow Agency",
-        role: "Web Designer & Developer",
-        info: "Los Angeles • Part-time • $80k - $120k",
-        description: "Design and build websites.",
+    id: 10,
+        companyName: "TechCorp Industries",
+        type: "Senior Frontend Developer",
+        position:"Senior Engineer",
+        location:"Dhaka",
+        salary:"San Francisco, CA • Full-time • $130,000 - $175,000",
+        description: "We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.",
         status: "all"
     }
+
+
 
 ];
 
@@ -95,17 +141,19 @@ function render() {
 
         // Top-right delete button
         const deleteBtn = document.createElement("button");
-        deleteBtn.innerHTML = "Delete";
-        deleteBtn.className = "absolute top-2 right-2 text-gray-400 hover:text-red-500";
+        deleteBtn.innerHTML = "Delete"
+        deleteBtn.className = "absolute top-2 right-2 text-gray-500 hover:text-red-500";
         deleteBtn.onclick = () => deleteJob(job.id);
         card.appendChild(deleteBtn);
 
         // Job content
         const content = document.createElement("div");
         content.innerHTML = `
-      <h3 class="font-bold text-blue-900">${job.company}</h3>
-      <p class="text-gray-600">${job.role}</p>
-      <p class="text-sm text-gray-500 mt-2">${job.info}</p>
+      <h3 class="font-bold text-blue-900">${job.companyName}</h3>
+      <p class="text-gray-600">${job.type }</p>
+      <p class="text-gray-600">${job.position }</p>
+      <p class="text-gray-600">${job.location }</p>
+      <p class="text-sm text-gray-500 mt-2">${job.salary}</p>
       <p class="text-sm mt-2">${job.description}</p>
 
       <div class="flex gap-3 mt-4">
